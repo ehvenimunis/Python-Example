@@ -1,3 +1,3 @@
-#C-Plus-Plus-Example
+C-Plus-Plus-Example
 
-##Author : Muhammed Salih Aydogan
+Author : Muhammed Salih Aydogan
