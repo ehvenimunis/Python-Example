@@ -1,3 +1,3 @@
-C-Plus-Plus-Example
+### Python Example
 
-Author : Muhammed Salih Aydogan
+#### Author      : Muhammed Salih Aydogan
