@@ -2,6 +2,7 @@ import sys
 from PyQt5 import QtWidgets
 from _checkboxForm import Ui_MainWindow
 
+
 class myApp(QtWidgets.QMainWindow):
     def __init__(self):
         super(myApp, self).__init__()
@@ -20,8 +21,8 @@ class myApp(QtWidgets.QMainWindow):
         result = ''
         items = self.ui.groupHobiler.findChildren(QtWidgets.QCheckBox)
         for cb in items:
-            if cb.isChecked():
-                result += cb.text() + '\n'
+            if cb.isChecked():  # eğer seçildiyse
+                result += cb.text() + '\n'  # seçilen değeri yazdır
 
         self.ui.lblResultHobiler.setText(result)
 
@@ -47,5 +48,6 @@ def app():
     win = myApp()
     win.show()
     sys.exit(app.exec_())
+
 
 app()
