@@ -10,6 +10,7 @@ def window(): # create window
     win.setWindowTitle('Python Simple GUI')
     win.setGeometry(100,100,750,750)
     win.setWindowIcon(QIcon('index2.png'))
+    win.setToolTip('my app type')
 
 
     win.show()
