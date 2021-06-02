@@ -2,13 +2,15 @@ from PyQt5 import QtWidgets
 import sys
 from _radiobuttonForm import Ui_MainWindow
 
+
 class Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
-    
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        # başlangıçta varsayılan olarak gelmesini istedik
         self.ui.radioTurkiye.setChecked(True)
         self.ui.radioLise.setChecked(True)
 
@@ -26,26 +28,28 @@ class Window(QtWidgets.QMainWindow):
         self.ui.btnEgitim.clicked.connect(self.getSelectedEgitim)
 
     def onClickedUlke(self):
-        rb = self.sender()
+        rb = self.sender()  # tıklanılan elemanı alırsın
         if rb.isChecked():
-            print('seçilen ülke: '+ rb.text())
+            print('seçilen ülke: ' + rb.text())
 
     def onClickedEgitim(self):
         rb = self.sender()
         if rb.isChecked():
-            print('seçilen eğitim: '+ rb.text())
+            print('seçilen eğitim: ' + rb.text())
 
     def getSelectedUlke(self):
         items = self.ui.groupBoxUlke.findChildren(QtWidgets.QRadioButton)
         for rb in items:
             if rb.isChecked():
-                self.ui.lblUlke.setText('seçilen ülke: '+ rb.text())
+                # label üzerinde seçimler yazdırılır
+                self.ui.lblUlke.setText('seçilen ülke: ' + rb.text())
 
     def getSelectedEgitim(self):
         items = self.ui.groupBoxEgitim.findChildren(QtWidgets.QRadioButton)
         for rb in items:
             if rb.isChecked():
-                self.ui.lblEgitim.setText('seçilen eğitim: '+ rb.text())
+                self.ui.lblEgitim.setText('seçilen eğitim: ' + rb.text())
+
 
 app = QtWidgets.QApplication(sys.argv)
 win = Window()
