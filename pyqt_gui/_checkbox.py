@@ -14,15 +14,16 @@ class myApp(QtWidgets.QMainWindow):
         self.ui.cbKitapOkumak.stateChanged.connect(self.show_state)
         self.ui.cbSpor.stateChanged.connect(self.show_state)
 
-        self.ui.btnHobilerSecilenleriAl .clicked.connect(self.getAllHobiler)
+        self.ui.btnHobilerSecilenleriAl.clicked.connect(self.getAllHobiler)
         self.ui.btnDerslerSecilenleriAl.clicked.connect(self.getAllDersler)
 
     def getAllHobiler(self):
         result = ''
+        # seçilen tiklerin hepsini alır (grup içerisindekileri alır)
         items = self.ui.groupHobiler.findChildren(QtWidgets.QCheckBox)
         for cb in items:
-            if cb.isChecked():  # eğer seçildiyse
-                result += cb.text() + '\n'  # seçilen değeri yazdır
+            if cb.isChecked():                                          # eğer seçildiyse
+                result += cb.text() + '\n'                              # seçilen değeri yazdır
 
         self.ui.lblResultHobiler.setText(result)
 
@@ -35,12 +36,13 @@ class myApp(QtWidgets.QMainWindow):
 
         self.ui.lblResultDersler.setText(result)
 
+    # ekrana yazdırma yapar
     def show_state(self, value):
         cb = self.sender()
 
         print(value)
-        print(cb.text())
-        print(cb.isChecked())
+        print(cb.text())  # hangisine tıklandı
+        print(cb.isChecked())  # tıklandı mı
 
 
 def app():
