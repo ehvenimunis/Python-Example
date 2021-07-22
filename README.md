@@ -2,8 +2,6 @@
 
 #### Author      : Muhammed Salih Aydogan
 
-Run: 
-"'
-python name.py
-pyuic5 name.ui -o name.py 
-"'
+<br  /> Run: 
+<br  />   python name.py
+<br  />   pyuic5 name.ui -o name.py  
