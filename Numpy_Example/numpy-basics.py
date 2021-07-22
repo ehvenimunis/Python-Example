@@ -15,7 +15,7 @@ np_multi = np_array.reshape(3,3)
 print(py_multi)
 print(np_multi)
 
-print(np_array.ndim)
+print(np_array.ndim) # boyutları verir 
 print(np_multi.ndim)
 
 print(np_array.shape)

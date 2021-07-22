@@ -17,17 +17,17 @@ result = numbers1 / 10
 
 result = np.sin(numbers1)
 result = np.cos(numbers1)
-result = np.sqrt(numbers1)
-result = np.log(numbers1)
+result = np.sqrt(numbers1) # karakök alır 
+result = np.log(numbers1)  # logaritmasını alır 
 
-mnumbers1 = numbers1.reshape(2,3)
+mnumbers1 = numbers1.reshape(2,3) # çoklu dizi oluşturma 
 mnumbers2 = numbers2.reshape(2,3)
 
 # print(mnumbers1)
 # print(mnumbers2)
 
-result = np.vstack((mnumbers1,mnumbers2))
-result = np.hstack((mnumbers1,mnumbers2))
+result = np.vstack((mnumbers1,mnumbers2)) # dikey birleştirme yapar 
+result = np.hstack((mnumbers1,mnumbers2)) # yatay olarak işler 
 
 result = numbers1 >= 50
 result = numbers1 % 2 == 0
