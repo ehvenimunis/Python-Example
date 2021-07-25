@@ -12,7 +12,7 @@ result = np.arange(50,100,5)
 # 4- 10 elemanlı sıfırlardan oluşan bir dizi oluşturunuz.
 result = np.zeros(10)
 
-# 5- 10 elemanlı birlerden oluşan bir dizi oluşturunuz.
+# 5- 10 elemanlı birlerden oluşan bir  dizi oluşturunuz.
 result = np.ones(10)
 
 # 6- (0-100) arasında eşit aralıklı 5 sayı üretin.
