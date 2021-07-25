@@ -8,7 +8,7 @@ driver.get(url)
 
 time.sleep(2)
 driver.maximize_window()
-driver.save_screenshot("github.com-homepage.png")
+driver.save_screenshot("github.com-homepage.png") # sayfanın ekran görüntüsünü alır
 
 url = "http://github.com/sadikturan"
 driver.get(url)
