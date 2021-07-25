@@ -18,7 +18,7 @@ class Github:
 
         time.sleep(1)
 
-        self.browser.find_element_by_xpath("//*[@id='login']/form/div[3]/input[8]").click()
+        self.browser.find_element_by_xpath("//*[@id='login']/form/div[3]/input[8]").click() # butona tıklandı 
 
     def loadFollowers(self):
         items = self.browser.find_elements_by_css_selector(".d-table.table-fixed")
@@ -28,12 +28,12 @@ class Github:
 
 
     def getFollowers(self):
-        self.browser.get(f"https://github.com/{self.username}?tab=followers")
+        self.browser.get(f"https://github.com/{self.username}?tab=followers") # takipçilerin olduğu sayfamız 
         time.sleep(2)
 
         self.loadFollowers()
 
-        while True:
+        while True: # sonraki sayfaya hareket için "next" buton durumuna bakalım
             links = self.browser.find_element_by_class_name("BtnGroup").find_elements_by_tag_name("a")
 
             if len(links) == 1:
@@ -42,9 +42,9 @@ class Github:
                     time.sleep(1)
                     self.loadFollowers()
 
-                else:
+                else: # son sayfaya geldiyse
                     break
-            else:
+            else: 
                 for link in links:
                     if link.text == "Next":
                         link.click()
@@ -54,7 +54,7 @@ class Github:
                         continue
 
 
-github = Github(username, password)
+github = Github(username, password) # nesne türetildi 
 github.signIn()
 github.getFollowers()
 print(len(github.followers))
