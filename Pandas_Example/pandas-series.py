@@ -5,7 +5,7 @@ import numpy as np
 numbers = [20,30,40,50]
 letters = ['a','b','c','d']
 dict = {'a':10,'b':20,'c':30,'d':40}
-random_numbers = np.random.randint(10,100,6)
+random_numbers = np.random.randint(10,100,6) # numpy ile random sayılar üret 
 
 # pandas_series = pd.Series()
 # pandas_series = pd.Series(numbers)
@@ -35,11 +35,11 @@ pandas_series = pd.Series([20,30,40,51], ['a','b','c','d'])
 # result = pandas_series + 50
 # result = np.sqrt(pandas_series)
 
-# result = pandas_series >=50
+result = pandas_series >=50
 # result = pandas_series % 2 == 0
 
 # print(pandas_series[pandas_series % 2 == 0])
-# print(pandas_series)
+print(pandas_series)
 # print(result)
 
 
