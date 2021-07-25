@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.keys import Keys # enter veya space tuşuna basmak istiyoruz 
 import time
 
 driver = webdriver.Chrome()
@@ -12,7 +12,7 @@ searchInput = driver.find_element_by_xpath("/html/body/div[1]/header/div/div[2]/
 time.sleep(1)
 searchInput.send_keys("python")
 time.sleep(2)
-searchInput.send_keys(Keys.ENTER)
+searchInput.send_keys(Keys.ENTER) # enter tuşuna bas
 time.sleep(2)
 # result = driver.page_source
 result = driver.find_elements_by_css_selector(".repo-list-item h3 a")
