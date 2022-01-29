@@ -8,7 +8,7 @@ class MyWindow(QMainWindow): # QMainWindow dan bir sınıf yaratıldı
         super(MyWindow, self).__init__()
 
         self.setWindowTitle('First Application')
-        self.setGeometry(200,200,700,700)
+        self.setGeometry(200,200,500,250) # window size 
         self.setWindowIcon(QIcon('icon.png'))
         self.setToolTip('my tooltip')
         self.initUI() # pencere üzeirndeki elemanlar tanımalanır

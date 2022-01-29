@@ -14,6 +14,9 @@ fruits.pop()
 
 fruits.clear()
 
+print(type(fruits))
+
+
 print(fruits)
 
 # myList = [1,2,5,4,4,2,1]

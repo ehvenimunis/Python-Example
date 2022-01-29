@@ -9,7 +9,7 @@ def window(): # create window
     win = QMainWindow()
 
     win.setWindowTitle('Python Simple GUI')
-    win.setGeometry(100,100,750,750)
+    win.setGeometry(100,100,500,250)
     win.setWindowIcon(QIcon('index2.png'))
     win.setToolTip('my app type')
 

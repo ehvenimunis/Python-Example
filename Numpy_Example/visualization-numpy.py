@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Creating data set
 # As the image is a collection of pixel values in matrix, we will create those matrix of pixel for A, B, C 
 # A
-a =[0, 0, 1, 1, 0, 0,
+a =[1, 0, 1, 1, 0, 1,
 0, 1, 0, 0, 1, 0,
 1, 1, 1, 1, 1, 1,
 1, 0, 0, 0, 0, 1,

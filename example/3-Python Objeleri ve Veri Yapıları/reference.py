@@ -14,6 +14,8 @@ b = ["apple","banana"]
 
 a = b
 
+print(a, b)
+
 b[0] = "grape"
 
 print(a, b)

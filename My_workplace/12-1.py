@@ -1,14 +1,14 @@
-def greeting(name):
-     print('hello ', name)
+# def greeting(name):
+#     print('hello ', name)
 
-print(greeting('ali'))
-print(greeting)
+# print(greeting('ali'))
+# print(greeting)
 
 # sayHello = greeting
 # del sayHello
 # print(sayHello)
 
-# encapsulation
+# encapsulation (bu kullanım önemli)
 # def outer(num1):
 #     print('outer')
 #     def inner_increment(num1):
@@ -35,7 +35,6 @@ def factorial(number):
         return number * inner_factorial(number - 1)
 
     return inner_factorial(number)
-
 try:
     print(factorial("4"))
 except Exception as ex:

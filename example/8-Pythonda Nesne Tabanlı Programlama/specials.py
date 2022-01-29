@@ -19,8 +19,11 @@ class Movie():
     def __len__(self):
         return self.duration
 
-    def __del__(self):
+    def __del__(self): 
         print('film objesi silindi')
+
+    def my_method(self):
+        print('my method run')
 
 m = Movie('film adı','yönetmen adı',120)
 
@@ -28,4 +31,6 @@ m = Movie('film adı','yönetmen adı',120)
 print(str(m))
 # print(len(mylist))
 # print(len(m))
+
+m.my_method()
 

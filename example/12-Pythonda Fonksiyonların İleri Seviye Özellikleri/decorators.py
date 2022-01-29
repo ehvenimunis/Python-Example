@@ -35,6 +35,6 @@ def toplama(a,b):
     print(a+b)
 
 usalma(2,3)
-faktoriyel(4)
+faktoriyel(2)
 toplama(10,20)
 

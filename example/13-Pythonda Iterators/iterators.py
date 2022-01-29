@@ -52,7 +52,6 @@ while True:
     except StopIteration:
         break
 
-
 # for x in list:
 #     print(x)
 
